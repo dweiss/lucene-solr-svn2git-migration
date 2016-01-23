@@ -88,9 +88,9 @@ git replace --graft $HASH $PARENT
 
 git co lucene-solr/trunk
 # Verify sanity by tracking IndexWriter's history all the way back to 2001.
-git log --follow lucene/core/src/java/org/apache/lucene/index/IndexWriter.java       | tail -n 10
+git log --follow -- lucene/core/src/java/org/apache/lucene/index/IndexWriter.java       | tail -n 10
 # Verify solr's core sanity by tracking SolrCore history all the way back to 2006.
-git log --follow solr/core/src/java/org/apache/solr/core/SolrCore.java               | tail -n 10
+git log --follow -- solr/core/src/java/org/apache/solr/core/SolrCore.java               | tail -n 10
 
 # Create modern branches.
 git co branch_3x
@@ -132,7 +132,7 @@ git config core.filemode false
 # Sanity checks:
 #   git co master
 #   git log -1
-#   git log --follow lucene/core/src/java/org/apache/lucene/index/IndexWriter.java
-#   git log --follow solr/core/src/java/org/apache/solr/core/SolrCore.java       
-#   git log --follow solr/solrj/src/java/org/apache/solr/client/solrj/SolrClient.java
+#   git log --follow -- lucene/core/src/java/org/apache/lucene/index/IndexWriter.java
+#   git log --follow -- solr/core/src/java/org/apache/solr/core/SolrCore.java       
+#   git log --follow -- solr/solrj/src/java/org/apache/solr/client/solrj/SolrClient.java
 

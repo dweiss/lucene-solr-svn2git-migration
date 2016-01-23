@@ -134,6 +134,7 @@ git tag releases/lucene-solr/5.2.1         origin/tags/lucene_solr_5_2_1
 git tag releases/lucene-solr/5.3.0         origin/tags/lucene_solr_5_3_0
 git tag releases/lucene-solr/5.3.1         origin/tags/lucene_solr_5_3_1
 git tag releases/lucene-solr/5.4.0         origin/tags/lucene_solr_5_4_0 
+git tag releases/lucene-solr/5.4.1         origin/tags/lucene_solr_5_4_1 
 
 # Create branches for branch_3x, branch_4x, branch_5x
 git co origin/branch_3x -b branch_3x
